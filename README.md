@@ -1,6 +1,6 @@
 # ChatterBase
 
-![ChatterBase](imgs/interfaz_tfg.png)
+![interfaz_tfg](https://github.com/user-attachments/assets/a9111c7e-bc9a-4b72-85fa-b447787678cc)
 
 Trabajo de Fin de Grado de Ciencia e Ingeniería de Datos desarrollado por Borja Souto, David Vilares y Bruno Cabado en la Universidad de A Coruña en 2024, bajo el título de "*Asistente virtual basado en grandes modelos de lenguaje para la interacción con bases de datos mediante lenguaje natural*". 
 
