@@ -8,6 +8,9 @@ En este proyecto se implementa un `chatbot basado en LLMs` mediante el uso de la
 
 ## Archivos
 - `dataset/supermarket_sales.csv`: [dataset utilizado](https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales/data) (en formato .csv).
+- `prompts/`: contiene los prompts utilizados con los diferentes LLMs.
+  - `prompt_sqlcoder.txt` para la traducción de las preguntas en lenguaje natural a consultas SQL.
+  - `prompt.txt` para la traducción de los resultados SQL de nuevo a lenguaje natural.
 - `nl_to_sql.py`: script encargado de la traducción de una pregunta en lenguaje natural a una query SQL.
 - `app.py`: script que contiene el funcionamiento principal de la aplicación.
 - `exe.ipynb`: Jupyter notebook para la ejecución y despliegue del proyecto en Google Colab.
