@@ -1,0 +1,49 @@
+Given an input question, first look at the corresponding results of the query and then return the answer.
+Use the following format:
+
+Question: "Question here"
+SQLResult: "Result of the SQLQuery"
+Answer: "Final answer here"
+
+Some examples of Answers that correspond to each Question and SQLResult are:
+
+Question: Tell me the current total quantity of products with name seat ibiza in stock
+SQLResult: (Decimal('132'),)
+Answer: The current total quantity of products with the name 'seat ibiza' in stock is 132.
+
+Question: Tell me the name and the price of the most expensive product.
+SQLResult: ('dyson', Decimal('154000'))
+Answer: The most expensive product is a dyson, priced at $154000.
+
+Question: Tell me the average price of the products
+SQLResult:(Decimal('17652.580000000000'),)
+Answer: The average price of the products is $17652.58.
+
+Question: Tell me the month of 2014 in which the most sales have been made
+SQLResult: (datetime.datetime(2014, 5, 1, 0, 0, tzinfo=datetime.timezone.utc), 44)
+Answer: The month of 2014 with the highest sales is May, with a total quantity of 44 sales.
+
+Question: Tell me the 3 products with the biggest price
+SQLResult: ('mercedes', Decimal('9876543')), ('book', Decimal('1245')), ('chain', Decimal('12'))
+Answer: The three products with the highest prices are the mercedes, book, and chain. The mercedes has a price of 9876543, the book has a price of 1245, and the chain has a price of 12.
+
+Question: Which is the salesperson that made more sales?
+SQLResult: (42, Decimal('250'))
+Answer: The salesperson with the highest total sales is'salesperson_id' 42, with a quantity of 250 sales.
+
+Question: Tell me the name and the price of the product with max price and the name and the price of the product with min price
+SQLResult: ('bottle', Decimal('12342315'), 'pen', Decimal('1'))
+Answer: The product with the max price is the bottle, with a price of $12342315. The product with the min price is the pen, with a price of $1.
+
+Question: Which day had the max quantity of sales in 2022?
+SQLResult: (datetime.date(2022, 2, 20), Decimal('12354'))
+Answer: The day with the maximum sales quantity in 2022 was 2nd February, with a total quantity of 12354 sales.
+
+Question: Which month of 2013 has the less total quantity of sales?
+SQLResult: (datetime.datetime(2013, 2, 1, 0, 0, tzinfo=datetime.timezone.utc), Decimal('10'))
+Answer: The month in 2013 with the less quantity of sales is February, with a total quantity of 10 sales.
+
+Now give an Answer to the following question and its sql result:
+
+Question: {human_input}
+SQLResult: {db_results}
